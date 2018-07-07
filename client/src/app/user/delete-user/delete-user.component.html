@@ -1,0 +1,21 @@
+<h3>DELETE USER</h3>
+
+<div>
+    <div>
+        <label>First Name: </label>
+        <span>{{ user?.firstName }}</span>
+    </div>
+   <div>
+        <label>Last Name: </label>
+        <span>{{ user?.lastName }}</span>
+    </div>
+    <div>
+        <label>E-mail: </label>
+        <span>{{ user?.email }}</span>
+    </div>
+
+    <div>
+        <button type="reset" (click)="onCancel()">Cancel</button>
+        <button (click)="onSubmit()">Delete</button>
+    </div>
+</div>

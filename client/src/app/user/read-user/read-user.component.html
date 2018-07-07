@@ -1,0 +1,8 @@
+<h3>ALL USERS</h3>
+
+<ul >
+  <li *ngFor="let user of users" >
+    <span>{{user.firstName}} {{user.lastName}}</span>&nbsp;[<a [routerLink]="['/user/update', user._id]">Update</a> | <a [routerLink]="['/user/delete', user._id]">Delete</a>]
+  </li>
+  <li><a [routerLink]="['/user/create']">[New]</a></li>
+</ul>

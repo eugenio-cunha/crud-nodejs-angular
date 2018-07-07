@@ -1,0 +1,22 @@
+<h3>UPDATE USER</h3>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <input type="hidden" formControlName="_id">
+    <div>
+        <label>First Name:</label>
+        <input type="text" formControlName="firstName">
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input type="text" formControlName="lastName">
+    </div>
+    <div>
+        <label>E-mail:</label>
+        <input type="email" formControlName="email">
+    </div>
+
+    <div>
+        <button type="reset" (click)="onCancel()">Cancel</button>
+        <button type="submit">Save</button>
+    </div>
+</form>
