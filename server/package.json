@@ -1,0 +1,30 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "CRUD node, express e angular",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "express",
+    "mongo",
+    "MEAN"
+  ],
+  "author": "Eugenio Cunha <genio.py@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^6.0.8",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "mongoose": "^5.2.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
